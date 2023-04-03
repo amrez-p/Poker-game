@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lobster: ["ui-sans-serif", "Lobster Two"],
+        playball: ["ui-sans-serif", "Playball"],
       },
       scale: {
         10: "0.1",

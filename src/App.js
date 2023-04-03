@@ -1,20 +1,16 @@
 import React from "react";
+import Menu from "./components/Menu";
+import GamePage from "./components/GamePage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className=" fixed flex inset-0 justify-center items-center font-lobster ml-40">
-      <a
-        className="text-white text-4xl -mr-48 hover:text-red-600"
-        href="gamePage.html"
-      >
-        Play Game
-      </a>
-      <img
-        className="scale-20"
-        src="./images/Playing_Cards/handGif.gif"
-        alt="card-animation"
-      />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" index element={<Menu />} />
+        <Route path="/GamePage" element={<GamePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
