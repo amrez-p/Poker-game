@@ -32,7 +32,7 @@ code {
   text-shadow: 0px 0px 20px black;
   background-repeat: no-repeat;
   transition: all 0.7s ease;
-  margin-block: 30px;
+  margin-block: 20px;
   cursor: pointer;
 }
 .Deal:hover {

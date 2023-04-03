@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
 
-const Game = ({ Data }) => {
+const Game = () => {
   return (
     <div className=" text-white flex justify-between items-center text-2xl m-5 font-playball font-bold select-none">
       <div className="flex z-10">
@@ -21,40 +21,30 @@ const Game = ({ Data }) => {
         </p>
       </div>
       {/* <UserBar Data={Data} /> */}
-      {/* Card Deck */}
-      <CardDeck Data={Data} />
-      {/* Card Deck */}
+      {/* Poker Match */}
+      <PokerMatch />
+      {/* Poker Match */}
     </div>
   );
 };
 
 export default Game;
 
-const CardDeck = ({ Data }) => {
+const PokerMatch = () => {
   return (
     <div className="fixed inset-0 flex flex-col justify-center items-center ">
-      {/* <div class="aiBar"></div> */}
-      <Cards Data={Data} />
+      {/* <Cards Data={Data} /> */}
 
-      {/* <div class=""> */}
       <p className="Deal">Deal</p>
-      {/* <img
-          class="invisible"
-          id="winImg"
-          src="images/Playing_Cards/winImg.png"
-          alt=""
-        /> */}
-      <p className="text-gray-500 font-thin ">
+
+      <p className="text-gray-500 font-thin mb-2 ">
         Click the <span className="font-lobster">"Deal"</span> button to begin
       </p>
 
-      <Cards Data={Data} />
+      <Cards />
       {/* <div class="buttons">
           <p class="reset invisible">Play again?</p>
         </div> */}
-      {/* </div> */}
-
-      {/* <div class="userBar"></div> */}
     </div>
   );
 };

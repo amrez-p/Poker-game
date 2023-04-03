@@ -24,6 +24,16 @@
       "id": "4",
       "img": "card-diamonds-5.png",
       "alt": "Diamonds"
+    },
+    {
+      "id": "5",
+      "img": "card-diamonds-6.png",
+      "alt": "Diamonds"
+    },
+    {
+      "id": "6",
+      "img": "card-diamonds-7.png",
+      "alt": "Diamonds"
     }
   ]
 }
