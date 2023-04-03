@@ -18,3 +18,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.Deal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 144px;
+  color: white;
+  font-family: lobster Two;
+  font-weight: 100;
+  background-image: url("../public/images/Game_Assest/card-back2.png");
+  background-size: contain;
+  text-shadow: 0px 0px 20px black;
+  background-repeat: no-repeat;
+  transition: all 0.7s ease;
+  margin-block: 30px;
+  cursor: pointer;
+}
+.Deal:hover {
+  transform: scale(1.1);
+  transition: all 0.7s ease;
+}

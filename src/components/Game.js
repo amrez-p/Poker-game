@@ -1,21 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Cards from "./Cards";
 
-const Game = () => {
+const Game = ({ Data }) => {
   return (
-    <div className=" text-white flex justify-between items-center text-2xl m-5 font-lobster font-bold select-none">
+    <div className=" text-white flex justify-between items-center text-2xl m-5 font-playball font-bold select-none">
       <div className="flex z-10">
-        <Link className="hover:text-red-600 mr-2" to="/">
+        <Link className="hover:text-red-600 mr-2 select-none" to="/">
           Home
         </Link>
-        <img
-          class="navImg"
-          src="./images/Playing_Cards/casino-chip.png"
-          alt=""
-        />
+        <img src="./images/Game_Assest/casino-chip.png" alt="" />
       </div>
 
-      <div className="flex justify-around font-playball ">
+      <div className="flex justify-around ">
         <p className="mr-5">
           User Wins: <span>{"" || "0"}</span>
         </p>
@@ -23,8 +20,9 @@ const Game = () => {
           AI Wins: <span>{"" || "0"}</span>
         </p>
       </div>
+      {/* <UserBar Data={Data} /> */}
       {/* Card Deck */}
-      <CardDeck />
+      <CardDeck Data={Data} />
       {/* Card Deck */}
     </div>
   );
@@ -32,35 +30,31 @@ const Game = () => {
 
 export default Game;
 
-const CardDeck = () => {
+const CardDeck = ({ Data }) => {
   return (
-    <div className="fixed inset-x-0 flex justify-center items-center ">
-      <div class="aiBar"></div>
+    <div className="fixed inset-0 flex flex-col justify-center items-center ">
+      {/* <div class="aiBar"></div> */}
+      <Cards Data={Data} />
 
-      <div class="middleArea">
-        <p class="deal">Deal</p>
-        <p class="redeal invisible">Redeal</p>
-        <img
-          class="invisible"
-          id="loseImg"
-          src="images/Playing_Cards/joker.png"
-          alt=""
-        />
-        <img
+      {/* <div class=""> */}
+      <p className="Deal">Deal</p>
+      {/* <img
           class="invisible"
           id="winImg"
           src="images/Playing_Cards/winImg.png"
           alt=""
-        />
-        <p className="text-gray-500 font-thin ">
-          Click the "Deal" button to begin
-        </p>
-        <div class="buttons">
-          <p class="reset invisible">Play again?</p>
-        </div>
-      </div>
+        /> */}
+      <p className="text-gray-500 font-thin ">
+        Click the <span className="font-lobster">"Deal"</span> button to begin
+      </p>
 
-      <div class="userBar"></div>
+      <Cards Data={Data} />
+      {/* <div class="buttons">
+          <p class="reset invisible">Play again?</p>
+        </div> */}
+      {/* </div> */}
+
+      {/* <div class="userBar"></div> */}
     </div>
   );
 };
