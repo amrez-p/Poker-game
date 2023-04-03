@@ -1,6 +1,6 @@
 import React from "react";
 
-function App() {
+const Menu = () => {
   return (
     <div className=" fixed flex inset-0 justify-center items-center font-lobster ml-40">
       <a
@@ -16,6 +16,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
-export default App;
+export default Menu;
