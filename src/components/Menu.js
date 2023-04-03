@@ -5,7 +5,7 @@ const Menu = () => {
     <div className=" fixed flex inset-0 justify-center items-center font-lobster ml-40 font-bold">
       <Link
         className="text-white text-4xl -mr-48 hover:text-red-600"
-        to="/GamePage"
+        to="/Game"
       >
         Play Game
       </Link>

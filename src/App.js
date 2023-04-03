@@ -1,6 +1,6 @@
 import React from "react";
 import Menu from "./components/Menu";
-import GamePage from "./components/GamePage";
+import Game from "./components/Game";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" index element={<Menu />} />
-        <Route path="/GamePage" element={<GamePage />} />
+        <Route path="/Game" element={<Game />} />
       </Routes>
     </BrowserRouter>
   );
