@@ -18,6 +18,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.Retry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ghostwhite;
+  height: 110px;
+  width: 110px;
+  font-family: lobster Two;
+  font-size: 20px;
+  font-weight: 100;
+  background-image: url("../public/images/Game_Assest/retry-chip.png");
+  background-size: contain;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  background-repeat: no-repeat;
+  transition: all 0.7s ease;
+  margin-block: 20px;
+  cursor: pointer;
+}
 .Deal {
   display: flex;
   align-items: center;
@@ -29,12 +47,13 @@ code {
   font-weight: 100;
   background-image: url("../public/images/Game_Assest/card-back2.png");
   background-size: contain;
-  text-shadow: 0px 0px 20px black;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   background-repeat: no-repeat;
   transition: all 0.7s ease;
   margin-block: 20px;
   cursor: pointer;
 }
+.Retry:hover,
 .Deal:hover {
   transform: scale(1.1);
   transition: all 0.7s ease;

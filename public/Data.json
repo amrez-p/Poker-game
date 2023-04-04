@@ -3,37 +3,366 @@
     {
       "id": "0",
       "img": "card-diamonds-1.png",
-      "alt": "Diamonds"
+      "alt": "Diamonds",
+      "number": 14,
+      "name": "da"
     },
     {
       "id": "1",
       "img": "card-diamonds-2.png",
-      "alt": "Diamonds"
+      "alt": "Diamonds",
+      "number": 2,
+      "name": "d2"
     },
     {
       "id": "2",
       "img": "card-diamonds-3.png",
-      "alt": "Diamonds"
+      "alt": "Diamonds",
+      "number": 3,
+      "name": "d3"
     },
     {
       "id": "3",
       "img": "card-diamonds-4.png",
-      "alt": "Diamonds"
+      "alt": "Diamonds",
+      "number": 4,
+      "name": "d4"
     },
     {
       "id": "4",
       "img": "card-diamonds-5.png",
-      "alt": "Diamonds"
+      "alt": "Diamonds",
+      "number": 5,
+      "name": "d5"
     },
     {
       "id": "5",
       "img": "card-diamonds-6.png",
-      "alt": "Diamonds"
+      "alt": "Diamonds",
+      "number": 6,
+      "name": "d6"
     },
     {
       "id": "6",
       "img": "card-diamonds-7.png",
-      "alt": "Diamonds"
+      "alt": "Diamonds",
+      "number": 7,
+      "name": "d7"
+    },
+    {
+      "id": "7",
+      "img": "card-diamonds-8.png",
+      "alt": "Diamonds",
+      "number": 8,
+      "name": "d8"
+    },
+    {
+      "id": "8",
+      "img": "card-diamonds-9.png",
+      "alt": "Diamonds",
+      "number": 9,
+      "name": "d9"
+    },
+    {
+      "id": "9",
+      "img": "card-diamonds-10.png",
+      "alt": "Diamonds",
+      "number": 10,
+      "name": "d10"
+    },
+    {
+      "id": "10",
+      "img": "card-diamonds-11.png",
+      "alt": "Diamonds",
+      "number": 11,
+      "name": "dj"
+    },
+    {
+      "id": "11",
+      "img": "card-diamonds-12.png",
+      "alt": "Diamonds",
+      "number": 12,
+      "name": "dq"
+    },
+    {
+      "id": "12",
+      "img": "card-diamonds-13.png",
+      "alt": "Diamonds",
+      "number": 13,
+      "name": "dk"
+    },
+    {
+      "id": "13",
+      "img": "card-clubs-1.png",
+      "alt": "clubs",
+      "number": 14,
+      "name": "ca"
+    },
+    {
+      "id": "14",
+      "img": "card-clubs-2.png",
+      "alt": "clubs",
+      "number": 2,
+      "name": "c2"
+    },
+    {
+      "id": "15",
+      "img": "card-clubs-3.png",
+      "alt": "clubs",
+      "number": 3,
+      "name": "c3"
+    },
+    {
+      "id": "16",
+      "img": "card-clubs-4.png",
+      "alt": "clubs",
+      "number": 4,
+      "name": "c4"
+    },
+    {
+      "id": "17",
+      "img": "card-clubs-5.png",
+      "alt": "clubs",
+      "number": 5,
+      "name": "c5"
+    },
+    {
+      "id": "18",
+      "img": "card-clubs-6.png",
+      "alt": "clubs",
+      "number": 6,
+      "name": "c6"
+    },
+    {
+      "id": "19",
+      "img": "card-clubs-7.png",
+      "alt": "clubs",
+      "number": 7,
+      "name": "c7"
+    },
+    {
+      "id": "20",
+      "img": "card-clubs-8.png",
+      "alt": "clubs",
+      "number": 8,
+      "name": "c8"
+    },
+    {
+      "id": "21",
+      "img": "card-clubs-9.png",
+      "alt": "clubs",
+      "number": 9,
+      "name": "c9"
+    },
+    {
+      "id": "22",
+      "img": "card-clubs-10.png",
+      "alt": "clubs",
+      "number": 10,
+      "name": "c10"
+    },
+    {
+      "id": "23",
+      "img": "card-clubs-11.png",
+      "alt": "clubs",
+      "number": 11,
+      "name": "cj"
+    },
+    {
+      "id": "24",
+      "img": "card-clubs-12.png",
+      "alt": "clubs",
+      "number": 12,
+      "name": "cq"
+    },
+    {
+      "id": "25",
+      "img": "card-clubs-13.png",
+      "alt": "clubs",
+      "number": 13,
+      "name": "ck"
+    },
+    {
+      "id": "26",
+      "img": "card-hearts-1.png",
+      "alt": "hearts",
+      "number": 14,
+      "name": "ha"
+    },
+    {
+      "id": "27",
+      "img": "card-hearts-2.png",
+      "alt": "hearts",
+      "number": 2,
+      "name": "h2"
+    },
+    {
+      "id": "28",
+      "img": "card-hearts-3.png",
+      "alt": "hearts",
+      "number": 3,
+      "name": "h3"
+    },
+    {
+      "id": "29",
+      "img": "card-hearts-4.png",
+      "alt": "hearts",
+      "number": 4,
+      "name": "h4"
+    },
+    {
+      "id": "30",
+      "img": "card-hearts-5.png",
+      "alt": "hearts",
+      "number": 5,
+      "name": "h5"
+    },
+    {
+      "id": "31",
+      "img": "card-hearts-6.png",
+      "alt": "hearts",
+      "number": 6,
+      "name": "h6"
+    },
+    {
+      "id": "32",
+      "img": "card-hearts-7.png",
+      "alt": "hearts",
+      "number": 7,
+      "name": "h7"
+    },
+    {
+      "id": "33",
+      "img": "card-hearts-8.png",
+      "alt": "hearts",
+      "number": 8,
+      "name": "h8"
+    },
+    {
+      "id": "34",
+      "img": "card-hearts-9.png",
+      "alt": "hearts",
+      "number": 9,
+      "name": "h9"
+    },
+    {
+      "id": "35",
+      "img": "card-hearts-10.png",
+      "alt": "hearts",
+      "number": 10,
+      "name": "h10"
+    },
+    {
+      "id": "36",
+      "img": "card-hearts-11.png",
+      "alt": "hearts",
+      "number": 11,
+      "name": "hj"
+    },
+    {
+      "id": "37",
+      "img": "card-hearts-12.png",
+      "alt": "hearts",
+      "number": 12,
+      "name": "hq"
+    },
+    {
+      "id": "38",
+      "img": "card-hearts-13.png",
+      "alt": "hearts",
+      "number": 13,
+      "name": "hk"
+    },
+    {
+      "id": "39",
+      "img": "card-spades-1.png",
+      "alt": "spades",
+      "number": 14,
+      "name": "sa"
+    },
+    {
+      "id": "40",
+      "img": "card-spades-2.png",
+      "alt": "spades",
+      "number": 2,
+      "name": "s2"
+    },
+    {
+      "id": "41",
+      "img": "card-spades-3.png",
+      "alt": "spades",
+      "number": 3,
+      "name": "s3"
+    },
+    {
+      "id": "42",
+      "img": "card-spades-4.png",
+      "alt": "spades",
+      "number": 4,
+      "name": "s4"
+    },
+    {
+      "id": "43",
+      "img": "card-spades-5.png",
+      "alt": "spades",
+      "number": 5,
+      "name": "s5"
+    },
+    {
+      "id": "44",
+      "img": "card-spades-6.png",
+      "alt": "spades",
+      "number": 6,
+      "name": "s6"
+    },
+    {
+      "id": "45",
+      "img": "card-spades-7.png",
+      "alt": "spades",
+      "number": 7,
+      "name": "s7"
+    },
+    {
+      "id": "46",
+      "img": "card-spades-8.png",
+      "alt": "spades",
+      "number": 8,
+      "name": "s8"
+    },
+    {
+      "id": "47",
+      "img": "card-spades-9.png",
+      "alt": "spades",
+      "number": 9,
+      "name": "s9"
+    },
+    {
+      "id": "48",
+      "img": "card-spades-10.png",
+      "alt": "spades",
+      "number": 10,
+      "name": "s10"
+    },
+    {
+      "id": "49",
+      "img": "card-spades-11.png",
+      "alt": "spades",
+      "number": 11,
+      "name": "sj"
+    },
+    {
+      "id": "50",
+      "img": "card-spades-12.png",
+      "alt": "spades",
+      "number": 12,
+      "name": "sq"
+    },
+    {
+      "id": "51",
+      "img": "card-spades-13.png",
+      "alt": "spades",
+      "number": 13,
+      "name": "sk"
     }
   ]
 }

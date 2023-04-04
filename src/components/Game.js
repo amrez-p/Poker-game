@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
 
 const Game = () => {
+  const [Toggle, setToggle] = useState(false);
+
   return (
     <div className=" text-white flex justify-between items-center text-2xl m-5 font-playball font-bold select-none">
       <div className="flex z-10">
@@ -22,7 +24,7 @@ const Game = () => {
       </div>
       {/* <UserBar Data={Data} /> */}
       {/* Poker Match */}
-      <PokerMatch />
+      <PokerMatch Toggle={Toggle} setToggle={setToggle} />
       {/* Poker Match */}
     </div>
   );
@@ -30,16 +32,30 @@ const Game = () => {
 
 export default Game;
 
-const PokerMatch = () => {
+const PokerMatch = ({ Toggle, setToggle }) => {
   return (
     <div className="fixed inset-0 flex flex-col justify-center items-center ">
-      {/* <Cards Data={Data} /> */}
+      <Cards />
+      {Toggle ? (
+        <p className="Deal" onClick={() => setToggle(!Toggle)}>
+          Deal
+        </p>
+      ) : (
+        <p className="Retry" onClick={() => setToggle(!Toggle)}>
+          Try Again?
+        </p>
+      )}
 
-      <p className="Deal">Deal</p>
-
-      <p className="text-gray-500 font-thin mb-2 ">
-        Click the <span className="font-lobster">"Deal"</span> button to begin
-      </p>
+      {/* <p className="Deal">Deal</p> */}
+      {Toggle ? (
+        <p className="text-gray-500 font-thin mb-2 ">
+          Click the <span className="font-lobster">"Deal"</span> button to begin
+        </p>
+      ) : (
+        <p className="text-gray-500 font-thin mb-2 ">
+          <span className="font-lobster">"You Win!"</span>
+        </p>
+      )}
 
       <Cards />
       {/* <div class="buttons">
