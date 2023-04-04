@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-export const CardContext = createContext();
+export const CardContext = createContext(null);
 
 export const CardProvider = ({ children }) => {
   const [Data, setData] = useState({});

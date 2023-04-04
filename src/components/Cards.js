@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { CardContext } from "../context/context";
 
 const Cards = () => {
   const Card_Data = useContext(CardContext);
 
-  const randomIndex = Math.floor(
-    Math.random() * (Card_Data?.cards?.length - 4),
-  );
+  const randomIndex = useMemo(() => {
+    return Math.floor(Math.random() * (Card_Data?.cards?.length - 6));
+  }, [Card_Data]);
 
   return (
     <div className=" inset-0 flex justify-center items-center w-full">

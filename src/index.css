@@ -23,8 +23,8 @@ code {
   align-items: center;
   justify-content: center;
   color: ghostwhite;
-  height: 110px;
-  width: 110px;
+  height: 100px;
+  width: 100px;
   font-family: lobster Two;
   font-size: 20px;
   font-weight: 100;
@@ -32,7 +32,7 @@ code {
   background-size: contain;
   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   background-repeat: no-repeat;
-  transition: all 0.7s ease;
+  transition: all 1s ease;
   margin-block: 20px;
   cursor: pointer;
 }
@@ -49,7 +49,7 @@ code {
   background-size: contain;
   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   background-repeat: no-repeat;
-  transition: all 0.7s ease;
+  transition: all 1s ease;
   margin-block: 20px;
   cursor: pointer;
 }
