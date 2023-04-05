@@ -11,6 +11,14 @@ const Game = () => {
   const [Toggle, setToggle] = useState(false);
   const [StartToggle, setStartToggle] = useState(false);
 
+  if (score.User >= 10 || score.AI >= 10) {
+    setScore({
+      User: 0,
+      AI: 0,
+    });
+  } else {
+  }
+
   return (
     <div className=" text-white flex justify-between items-center text-2xl m-5 font-playball font-bold select-none">
       <div className="flex z-10">
@@ -30,6 +38,7 @@ const Game = () => {
       </div>
       {/* Poker Match */}
       <PokerMatch
+        score={score}
         StartToggle={StartToggle}
         setStartToggle={setStartToggle}
         setToggle={setToggle}
@@ -42,7 +51,13 @@ const Game = () => {
 
 export default Game;
 
-const PokerMatch = ({ StartToggle, setStartToggle, Toggle, setToggle }) => {
+const PokerMatch = ({
+  score,
+  StartToggle,
+  setStartToggle,
+  Toggle,
+  setToggle,
+}) => {
   if (!StartToggle) {
     return (
       <div className="fixed inset-0 flex flex-col justify-center items-center ">
@@ -70,6 +85,7 @@ const PokerMatch = ({ StartToggle, setStartToggle, Toggle, setToggle }) => {
           className="Deal"
           onClick={() => {
             setToggle(!Toggle);
+            score.User++;
           }}
         >
           ReDeal

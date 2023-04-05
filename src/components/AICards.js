@@ -17,7 +17,7 @@ const AICards = () => {
               const Img_src = "../images/Playing_Cards/" + data?.img;
               return (
                 <div
-                  className=" flex justify-center items-center mx-1 cursor-pointer"
+                  className=" flex justify-center items-center mx-1  "
                   key={data?.id || index}
                 >
                   <img src={Img_src} alt={data?.alt} />
@@ -32,28 +32,21 @@ const AICards = () => {
 //CARD BACK SIDE
 
 export const CardBack = () => {
-  const Card_Data = useContext(CardContext);
+  let Card = [1, 2, 3, 4, 5];
 
-  const randomIndex = Math.floor(
-    Math.random() * (Card_Data?.cards?.length - 13),
-  );
   return (
     <div className=" inset-0 flex justify-center items-center w-full">
-      {Card_Data
-        ? Card_Data?.cards
-            ?.slice(randomIndex, randomIndex + 5)
-            .map((data, index) => {
-              const Img_src = "../images/Game_Assest/card-back2.png";
-              return (
-                <div
-                  className=" flex justify-center items-center mx-1 cursor-pointer"
-                  key={data?.id || index}
-                >
-                  <img src={Img_src} alt={"hidden-card"} />
-                </div>
-              );
-            })
-        : null}
+      {Card.map((data, index) => {
+        const Img_src = "../images/Game_Assest/card-back2.png";
+        return (
+          <div
+            className=" flex justify-center items-center mx-1 cursor-pointer"
+            key={index}
+          >
+            <img src={Img_src} alt={"hidden-card"} />
+          </div>
+        );
+      })}
     </div>
   );
 };

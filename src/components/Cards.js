@@ -3,10 +3,20 @@ import { CardContext } from "../context/context";
 
 const Cards = () => {
   const Card_Data = useContext(CardContext);
+  // let poker = []
 
   const randomIndex = useMemo(() => {
-    return Math.floor(Math.random() * (Card_Data?.cards?.length - 6));
+    return Math.floor(Math.random() * (Card_Data?.cards?.length - 13));
+    // Card_Data?.cards?.slice(randomIndex, randomIndex + 5);
   }, [Card_Data]);
+
+  //   const dealCards = (pokerPlayer) => {
+  //   for (i = 0; i < 5; i++) {
+  //     Card_Data?.cards?.length = Card_Data?.cards?.length;
+  //     randomIndex = Math.floor(Math.random() * Card_Data?.cards?.length);
+  //     poker.push([randomIndex]);
+  //   }
+  // };
 
   return (
     <div className=" inset-0 flex justify-center items-center w-full">
