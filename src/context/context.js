@@ -4,8 +4,14 @@ export const CardContext = createContext(null);
 
 export const CardProvider = ({ children }) => {
   const [Data, setData] = useState({});
+  // useEffect(() => {
+  //   fetch("/Data.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setData(data);
+  //     });
   useEffect(() => {
-    fetch("/Data.json")
+    fetch("/Card.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data);

@@ -22,10 +22,23 @@ const Game = () => {
   return (
     <div className=" text-white flex justify-between items-center text-2xl m-5 font-playball font-bold select-none">
       <div className="flex z-10">
-        <Link className="hover:text-red-600 mr-2 select-none" to="/">
+        <Link className="hover:text-red-600 mr-5 select-none" to="/">
           Home
         </Link>
-        <img src="./images/Game_Assest/casino-chip.png" alt="" />
+        <div className="flex ml-14">
+          <div className="flex mr-14">
+            <p className="mr-4">
+              User Bet: <span> {"0"}</span>
+            </p>
+            <img src="./images/Game_Assest/casino-chip.png" alt="" />
+          </div>
+          <div className="flex">
+            <p className="mr-4">
+              AI Bet: <span> {"0"}</span>
+            </p>
+            <img src="./images/Game_Assest/casino-chip.png" alt="" />
+          </div>
+        </div>
       </div>
 
       <div className="flex justify-around ">
@@ -45,6 +58,9 @@ const Game = () => {
         Toggle={Toggle}
       />
       {/* Poker Match */}
+      {/* <div className="absolute bottom-20 left-14">
+        <button className="bg-red-700 w-20">Raise</button>
+      </div> */}
     </div>
   );
 };
